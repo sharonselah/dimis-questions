@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impact Reporting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Nunito:wght@400..800&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script src="flows.js" defer></script>
+  <script src="photos.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div>
+        <p class="overline">Impact reporting</p>
+        <p class="hint" id="user"></p>
+      </div>
+      <button type="button" class="link" id="reset">Start over</button>
+    </header>
+
+    <div class="progress" aria-hidden="true">
+      <div class="progress-bar" id="steps"></div>
+      <p class="progress-label" id="step-label"></p>
+    </div>
+
+    <form id="screen" class="screen" novalidate></form>
+
+    <div id="issues" class="issues" aria-live="polite"></div>
+
+    <nav class="nav">
+      <button type="button" class="btn ghost" id="back">Back</button>
+      <span class="nav-hint" id="next-hint"></span>
+      <button type="button" class="btn" id="next">Continue</button>
+    </nav>
+  </main>
+</body>
+</html>
